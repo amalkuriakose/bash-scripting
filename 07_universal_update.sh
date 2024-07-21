@@ -11,6 +11,6 @@ fi
 if grep -q "Ubuntu" $release_file || grep -q "Debian" $release_file
 then
     # If the host is based on Debian or Ubuntu, then run the apt update command
-    sudo apt update -y
-    sudo apt dist-upgrade
+    sudo apt update
+    sudo apt dist-upgrade -y
 fi
